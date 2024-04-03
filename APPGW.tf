@@ -116,7 +116,7 @@ resource "azurerm_application_gateway" "web_ag" {
     path                  = "/songs/" # Adjusted path
      pick_host_name_from_backend_address = true
     probe_name = local.probe_name_app2
-    # Added property
+    
   }
   probe {
     name                                      = local.probe_name_app2
