@@ -113,7 +113,7 @@ resource "azurerm_application_gateway" "web_ag" {
     port                  = 80
     protocol              = "Http"
     request_timeout       = 60
-    path                  = "/songs/" # Adjusted path
+    path                  = "/songs/" 
      pick_host_name_from_backend_address = true
     probe_name = local.probe_name_app2
     
